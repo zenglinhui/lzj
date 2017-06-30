@@ -1,0 +1,68 @@
+<div class="pageContent">
+    <form action="__URL__/update/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+        <input type="hidden" name="id" value="<?php echo $info['id'] ?>"/>
+        <div class="pageFormContent form-horizontal" layouth="20">
+
+       <div class="form-group">
+        <label for="j_title" class="control-label col-sm-2 ">活动名称：</label>
+        <div class="col-sm-5">
+                
+        <input type="text" class="form-control validate[required] required" name="name" id="j_title" value="<?php echo $info['name'] ?>"  >
+        
+        <p class="help-block">&nbsp;</p>
+                                      </div>
+        </div>
+            <div class="form-group">
+        <label for="j_title" class="control-label col-sm-2 ">主办方：</label>
+        <div class="col-sm-5">
+                
+        <input type="text" class="form-control validate[required] required" name="organizer" id="j_title" value="<?php echo $info['organizer'] ?>"  >
+        
+        <p class="help-block">&nbsp;</p>
+                                      </div>
+        </div>
+            <div class="form-group">
+        <label for="j_title" class="control-label col-sm-2 ">可参与次数（当天）：</label>
+        <div class="col-sm-5">
+                
+        <input type="text" class="form-control validate[required] required" name="num" id="j_title" value="<?php echo $info['num'] ?>"  >
+        
+        <p class="help-block">&nbsp;</p>
+                                      </div>
+        </div>
+            <div class="form-group">
+        <label for="j_title" class="control-label col-sm-2 ">开始时间：</label>
+        <div class="col-sm-5">
+                
+        <input type="text" class="form-control validate[required] required" name="timestart" id="j_title" value="<?php echo $info['timestart'] ?>"  >
+        
+        <p class="help-block">&nbsp;</p>
+                                      </div>
+        </div>
+            <div class="form-group">
+        <label for="j_title" class="control-label col-sm-2 ">结束时间：</label>
+        <div class="col-sm-5">
+                
+        <input type="text" class="form-control validate[required] required" name="timeend" id="j_title" value="<?php echo $info['timeend'] ?>"  >
+        
+        <p class="help-block">&nbsp;</p>
+                                      </div>
+        </div>
+         <div class="form-group">
+                            <label for="j_description" class="control-label col-sm-2 ">活动描述：</label>
+         <div class="col-sm-7">
+         <textarea name="descrition" id="j_description"  class="j-content validate[required] required"" style="width: 700px;" uploadJson="{:U('File/ke_upimg')}" fileManagerJson="{:U('File/editorfilemanager')}"  minheight="200"><?php echo $info['descrition'] ?></textarea>
+		<p class="help-block">&nbsp;</p>
+         </div>
+        </div>
+                    
+                    
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
